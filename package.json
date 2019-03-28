@@ -1,0 +1,33 @@
+{
+  "name": "woovly",
+  "version": "1.0.0",
+  "description": "",
+  "main": "conf.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "exceljs": "^1.7.0",
+    "protractor-jasmine2-html-reporter": "^0.0.7",
+    "robotjs": "^0.5.1",
+    "jasmine-reporters": "^2.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "protractor conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Harish1705/woovly-automation.git"
+  },
+  "keywords": [
+    "protractor",
+    "package.json"
+  ],
+  "author": "Harish",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Harish1705/woovly-automation/issues"
+  },
+  "homepage": "https://github.com/Harish1705/woovly-automation#readme"
+}
