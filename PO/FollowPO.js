@@ -30,5 +30,4 @@ var FollowUser = function() {
     };
 
 };
-
 module.exports = new FollowUser();
