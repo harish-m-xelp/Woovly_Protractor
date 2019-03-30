@@ -4,7 +4,7 @@ var WoovlyLogin = function() {
     var email = element(by.id("email_Id"));
     var password = element(by.xpath("(//input[@type='password'])[5]"));
     var sign_in = element(by.xpath("//div[@class='landing-button-signup  f_l15Imp f_m14 f_s14 transition300 cursor_pointer']"));
-    var user_icon = element(by.xpath("//div[@class='userOpt colour_white txt_cap align_center bolder display_flex flex_end transition300 flexdir_row poR']"));
+    var user_icon = $('[ng-show="loggedInUser"]');
     var logout = element(by.xpath("//div[@class='sub_tooltip icon ic-log-out logout_icon_grey bBtmNone cursor_pointer  align_center forMain']"));
     var google_button = element(by.id("googleLbtn2"));
     var google_email =  element(by.xpath("//input[@id='identifierId']"));
@@ -15,6 +15,8 @@ var WoovlyLogin = function() {
     var fb_password = element(by.xpath("(//input[@id=\'pass\'])[1]"));
     var fb_login = element(by.xpath("(//input[@id='u_0_0'])[1]"));
     var close_app = $('[onclick="closeAddPart()"]');
+    
+    
 
 // ============ Welcome to Woovly ============
 
@@ -79,7 +81,7 @@ var WoovlyLogin = function() {
       await signIn();
       browser.sleep(6000);
       await closeApp();
-      browser.sleep(2000);
+      browser.sleep(10000);
     };
 // ============= Gmail login ==============
 
@@ -170,13 +172,14 @@ var WoovlyLogin = function() {
 
 // ==========  Logout  ==============
 
-    async function System_Logout() {
-          await user_icon.click();
-          await logout.click();
-        };
+    // async function System_Logout() {
+    //       await user_icon.click();
+    //       await logout.click();
+    //     };
 
     this.logOut = async function() {
-          await System_Logout();
+      await user_icon.click();
+      await logout.click();
     }
 
 //For random number
