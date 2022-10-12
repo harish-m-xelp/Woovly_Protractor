@@ -10,7 +10,7 @@
     "exceljs": "^1.7.0",
     "protractor-jasmine2-html-reporter": "^0.0.7",
     "robotjs": "^0.5.1",
-    "jasmine-reporters": "^2.3.2"
+    "jasmine-reporters": "^2.5.0"
   },
   "devDependencies": {},
   "scripts": {
